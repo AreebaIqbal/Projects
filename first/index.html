@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Login</title>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+		
+
+<style>
+	*{
+    box-sizing: border-box;
+     font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif; 
+    font-size: 16px;
+}
+ 
+.navbar{
+	padding: 5px 8px !important;
+}
+.navbar-brand{
+	color: rgb(212, 212, 216) !important;
+	font-size: 28px;
+	font-weight: bolder;
+}
+.nav-link {
+		font-size: 18px;
+		font-weight: 600;
+		color:ghostwhite !important;
+		border: 2px solid ghostwhite;
+		border-radius: 8px;
+		margin: 5px 8px;
+		padding: 5px !important;
+	}
+	.nav-link:hover{
+		color: rgb(212, 212, 216) !important;
+		transition: .5s;
+		border: 2px solid rgb(212, 212, 216) ;
+	}
+	.head{
+    background-image: url("bg2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+        }
+.login {
+    width: 400px;
+    height: 430px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 10px grey;
+    margin: 20% auto !important;
+}
+.login h1 {
+    text-align: center;
+    color: #34495E;
+    font-size: 30px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #dee0e4;
+}
+.login form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+.login form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #34495E;
+    color: #ffffff;
+}
+.login form input[type="password"], .login form input[type="email"] {
+    width: 310px;
+    height: 50px;
+    border: 1px solid #dee0e4;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+.login form input[type="submit"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #34495E;
+    cursor: pointer;
+    font-weight: bold;
+    color: #ffffff;
+    transition: background-color 0.2s;
+}
+.login form input[type="submit"]:hover {
+  background-color: #2868c7;
+    transition: background-color 0.2s;
+}
+
+#front{
+    color: white;
+    margin: 40% 10%;
+    font-size: 60px;
+    
+}
+.front{
+	align-items: center;
+
+}
+.accounts{
+			  margin-top: 150px;
+              background-color: #252f3a !important;
+              color: rgb(197,197,197);
+              padding: 30px;
+            }
+            .info{
+               margin-left: 100px;
+            } 
+            .info h5{
+              text-decoration: underline;
+            }
+            .info a{
+              color: rgb(143, 140, 140);
+            }
+            .footer{
+              background-color: rgb(200, 196, 212);
+              color: rgb(60, 62, 71);
+              padding: 20px;
+              text-align: center;
+     
+            }
+          
+
+
+ @media only screen and (max-width: 1200px) {
+	#front{
+    color: white;
+    margin: 25% 10% 10%;
+    font-size: 45px;
+	}
+	.login{
+		margin-top: 50px;
+	}
+	.info{
+              margin-left: 0px;
+			  margin-top: 8%;
+	}
+
+      
+}
+
+</style>
+		
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top" style="background-color: #626F80  !important;">
+		<a class="navbar-brand" href="#"><i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+		  <span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+		 <ul class="navbar-nav mr-auto">
+			 <li>
+
+			 </li>
+		 </ul>
+		  <span class="navbar-text">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+				  <a class="nav-link" href="index.html">Sign In</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="signup.html">Sign Up</a>
+				</li>
+				
+			  </ul>
+		  </span>
+		</div>
+	  </nav>
+	<div class="row head">
+		<div class="col-md-12 col-lg-6 front">
+			<h1 id="front"> Start Learning New Skills</h1>
+		</div>
+		<div class="col-md-12 col-lg-6">
+			<div class="login">
+				<h1>Sign in</h1>
+				<form action="authenticate.php" method="post">
+					<label for="email">
+						<i class="fas fa-user"></i>
+					</label>
+					<input type="email" name="email" placeholder="Email" id="email" required>
+					<label for="password">
+						<i class="fas fa-lock"></i>
+					</label>
+					<input type="password" name="password" placeholder="Password" id="password" required>
+					<br>
+					<input type="submit" name = "signin" value="Sign in">
+
+					<p><br>New To Website? <span style="color: #327be7; cursor: pointer"><a href="signup.html">Create an Account </a></span></p>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="accounts">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-12 col-md-3 acc_start">
+			<h3> <i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills </h3>
+			&nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 030-53993864 <br>
+			&nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 033-32747983 <br>
+			&nbsp &nbsp  <i class="fas fa-envelope"></i> &nbsp SkillsForSkills@gmail.com <br>
+		   
+	  
+		  </div>
+	  
+		  <div class="col-xs-12 col-sm-12 col-md-3 info">
+			<h5> Follow Us on </h5>
+			<i class="fab fa-facebook-square" style="font-size: 24px;"></i> &nbsp
+			<i class="fab fa-twitter-square" style="font-size: 24px; "></i> &nbsp
+			<i class="fab fa-instagram" style="font-size: 24px;"></i>  &nbsp
+			<i class="fab fa-linkedin" style="font-size: 24px;"></i>  &nbsp
+		  
+		  </div>
+	  
+		  <div class="col-xs-12 col-sm-12 col-md-3 info">
+		  <h5> Customer Care</h5> 
+			<a href="contact.html"> Contact Us</a> <br>
+			<a href="#"> Terms and Conditions</a>
+		  </div>
+		</div>
+		
+	  </div>
+	  
+	  <div class="footer">
+	  @ Copyright MUET CSE 17CS22, 17CS23, 17CS24
+	  </div>
+	  
+
+</body>
+
+</html>

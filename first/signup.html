@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Signup</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+</head>
+
+
+<style>
+	* {
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	}
+
+	.navbar {
+		padding: 5px 8px !important;
+	}
+
+	.navbar-brand {
+		color:  rgb(212, 212, 216) !important;
+		font-size: 28px;
+		font-weight: bolder;
+	}
+
+	.nav-link {
+		font-size: 18px;
+		font-weight: 600;
+		color:ghostwhite !important;
+		border: 2px solid ghostwhite;
+		border-radius: 8px;
+		margin: 5px;
+		padding: 5px !important;
+	}
+	.nav-link:hover{
+	
+		color: rgb(212, 212, 216) !important;
+		transition: .5s;
+		border: 2px solid rgb(212, 212, 216) ;
+	}
+
+	.form-style {
+		width: 60% !important;
+		margin: 3% auto;
+		padding: 20px;
+		background-color: rgb(231, 231, 233);
+	}
+
+	fieldset {
+		border: 1px solid #34495E;
+		border-radius: 10px;
+		padding: 10px;
+		margin: 15px 0px;
+		background-color: ghostwhite;
+	}
+
+	h1 {
+		text-align: center;
+		background-color: #90a3b8;
+	}
+
+	label {
+		font-size: 16px;
+		font-weight: 500;
+	}
+
+	.btn {
+		width: 300px !important;
+		background-color: #34495E;
+		font-size: 18px;
+		color: azure;
+	}
+
+	.btn:hover {
+		background-color: #2868c7 !important;
+	}
+
+	.signup {
+		text-align: center;
+	}
+
+	.form-check-label {
+		width: 150px !important;
+		color: #34495E !important;
+	}
+	.accounts{
+              margin-top: 100px;
+              background-color: #252f3a;
+              color: rgb(197, 197, 197);
+              padding: 30px;
+            }
+            .info{
+               margin-left: 100px;
+            } 
+            .info h5{
+              text-decoration: underline;
+            }
+            .info a{
+              color: rgb(143, 140, 140);
+            }
+            .footer{
+              background-color: rgb(200, 196, 212);
+              color: rgb(60, 62, 71);
+              padding: 20px;
+              text-align: center;
+     
+            }
+            
+
+
+	@media only screen and (max-width: 1200px) {
+
+		.form-style {
+			width: 90% !important;
+		}
+		.info{
+              margin-left: 0px;
+              margin-top: 8%;
+            }
+	}
+</style>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #34495E !important;">
+		<a class="navbar-brand" href="#"><i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+			aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarText">
+			<ul class="navbar-nav mr-auto">
+				<li>
+
+				</li>
+			</ul>
+			<span class="navbar-text">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Sign In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="signup.html">Sign Up</a>
+					</li>
+				</ul>
+			</span>
+		</div>
+	</nav>
+	<form class="form-style" method="POST" action="signupAuthenticate.php">
+		<h1> Create Your Account </h1> <br>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="fname">First Name</label>
+				<input type="text" class="form-control" id="fname" name="fname">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="lname">Last Name</label>
+				<input type="text" class="form-control" id="lname" name="lname">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="email">Email</label>
+				<input type="email" class="form-control" id="email" name="email">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="password">Password</label>
+				<input type="password" class="form-control" id="password" name="password">
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-6">
+				<label for="mob">Phone</label>
+				<input type="number" class="form-control" id="mob" name="mob">
+			</div>
+			<div class="form-group col-md-6">
+				<label for="edu">Education Status</label>
+				<select id="edu" name="edu" class="form-control">
+					<option selected>Choose...</option>
+					<option>Primary</option>
+					<option>Matriculation</option>
+					<option>Intermediate</option>
+					<option>Bachelors</option>
+					<option>Masters</option>
+					<option>M Phil</option>
+					<option>PHD</option>
+				</select>
+			</div>
+		</div>
+		<fieldset>
+			<div class="form-group">
+				<label for="skills">Which Skills do you have?</label> <br>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="WEB Development"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox1">Web Development</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Java"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox2">Java</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Python"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox3">Python</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="C++/C"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox4">C++/C</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Linux"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox5">Linux</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Computer Basics"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox6">Computer Basics</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Database"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox7">Database</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="Graphic Designing"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox8">Graphic Designing</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="Content Writting"
+						name="skillsCheck[]">
+					<label class="form-check-label" for="inlineCheckbox9">Content wiritting</label>
+				</div>
+
+			</div>
+
+		</fieldset>
+
+		<fieldset>
+			<div class="form-group">
+				<label for="learn">Which Skills do you want to Learn?</label> <br>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="WEB Development"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox1">Web Development</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="Java"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox2">Java</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="Python"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox3">Python</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="C++/C"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox4">C++/C</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="Linux"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox5">Linux</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox6" value="Computer Basics"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox6">Computer Basics</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox7" value="Database"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox7">Database</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox8" value="Graphic Designing"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox8">Graphic Designing</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="inlineCheckbox9" value="Content Writting"
+						name="skillsLearn[]">
+					<label class="form-check-label" for="inlineCheckbox9">Content wiritting</label>
+				</div>
+
+			</div>
+
+		</fieldset>
+
+
+		<div class="signup">
+			<button type="submit" class="btn">Sign Up</button>
+		</div>
+
+	</form>
+
+	<div class="accounts">
+		<div class="row">
+		  <div class="col-xs-12 col-sm-12 col-md-3 acc_start">
+			<h3> <i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills </h3>
+			&nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 030-53993864 <br>
+			&nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 033-32747983 <br>
+			&nbsp &nbsp  <i class="fas fa-envelope"></i> &nbsp SkillsForSkills@gmail.com <br>
+		   
+	  
+		  </div>
+	  
+		  <div class="col-xs-12 col-sm-12 col-md-3 info">
+			<h5> Follow Us on </h5>
+			<i class="fab fa-facebook-square" style="font-size: 24px;"></i> &nbsp
+			<i class="fab fa-twitter-square" style="font-size: 24px; "></i> &nbsp
+			<i class="fab fa-instagram" style="font-size: 24px;"></i>  &nbsp
+			<i class="fab fa-linkedin" style="font-size: 24px;"></i>  &nbsp
+		  
+		  </div>
+	  
+		  <div class="col-xs-12 col-sm-12 col-md-3 info">
+		  <h5> Customer Care</h5> 
+			<a href="contact.html"> Contact Us</a> <br>
+			<a href="#"> Terms and Conditions</a>
+		  </div>
+		</div>
+		
+	  </div>
+	  
+	  <div class="footer">
+	  @ Copyright MUET CSE 17CS22, 17CS23, 17CS24
+	  </div>
+	  
+</body>
+
+</html>

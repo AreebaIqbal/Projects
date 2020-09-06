@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+  
+    
+    <style>
+      * {
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	}
+  @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+       .navbar{
+	          padding: 5px 8px !important;
+            }
+        .navbar-brand{
+            color:   rgb(212, 212, 216) !important;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        .nav-link {
+                font-size: 18px;
+                font-weight: 600;
+                color:ghostwhite !important;
+                margin: 5px;
+                padding: 5px !important;
+            }
+            .nav-link:hover{
+                color: rgb(212, 212, 216) !important;
+                transition: .5s;
+                
+                text-decoration: underline;
+            }
+            .head{
+              text-align: center;
+              color: #34495E;
+              
+              padding: 10% 5%;
+            
+            }
+            #head{
+              font-size: 65px;
+              
+              
+            }
+            #headpara{
+              font-size: 22px;
+            }
+            .sections{
+              background-color: rgb(241, 241, 248);
+              text-align: center;
+              padding: 10px;
+              margin: auto;
+            }
+            .sec{
+              background-color: rgb(100, 100, 116);
+              color: ghostwhite;
+              box-shadow: 2px 2px 18px grey;
+              padding: 30px 20px;
+              margin: 50px 40px;
+            }
+            #join{
+              margin: 4% auto;
+              border: 1px solid #34495E;
+              padding: 20px;
+              width: fit-content;
+              font-weight: normal;
+              text-align: center;
+              color: #34495E;
+            }
+            .section3{
+              background-color: rgb(241, 241, 248);
+              padding: 20px;
+            }
+            .sec3{
+              color: #34495E;
+              padding: 10px 20px;
+              margin: 10px 80px;
+            }
+            .quotehead{
+              font-size: 24px;
+            }
+            .quote{
+              font-size: 18px;
+            }
+            .accounts{
+              margin-top: 150px;
+              background-color: #252f3a;
+              color: rgb(197, 197, 197);
+              padding: 30px;
+            }
+            .info{
+               margin-left: 100px;
+            } 
+            .info h5{
+              text-decoration: underline;
+            }
+            .info a{
+              color: rgb(143, 140, 140);
+            }
+            .footer{
+              background-color: rgb(200, 196, 212);
+              color: rgb(60, 62, 71);
+              padding: 20px;
+              text-align: center;
+     
+            }
+            @media only screen and (max-width: 1200px) {
+            .info{
+              margin-left: 0px;
+              margin-top: 8%;
+            }
+          }
+            
+    </style>
+</head>
+<body>
+  
+  <nav class="navbar navbar-expand-lg" style="background-color: #34495E !important;">
+    <a class="navbar-brand" href="#"><i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+            <a class="nav-link" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="connection.php">Connections</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="chat1.php">Chat</a>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+        </li>
+        </ul>
+        <span class="navbar-text">
+        <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="profile.php"><i class="fas fa-user-circle"></i> Profile </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>  LogOut </a>
+        </li>
+        </ul>
+        </span>
+    </div>
+</nav>
+
+<div class="row" >
+  <div class="col-md-12 col-lg-6">
+    <img class="img-responsive" src="skill1.jpg" width="700" height="500">
+  </div>
+  <div class="col-md-12 col-lg-6 head">
+    <h1 id="head">BUILT FOR LEARNERS</h1> <br>
+    <p id="headpara">SkillsForSkills is one-on-one free learning platform built especially for students who are really passionate about learning. </p>
+  </div>
+</div>
+<div class="row sections">
+  <div class="col-md-12 col-lg-3 sec">
+    <h1>Learn <br> Together</h1>
+  </div>
+  <div class="col-md-12 col-lg-3 sec">
+    <h1>Peer <br> Teaching</h1>
+  </div>
+  <div class="col-md-12 col-lg-3 sec">
+    <h1>One-to-One Learning</h1>
+  </div>
+</div>
+<h4 id="join"> Join SkillsForSkills</h4>
+<div class="row section3">
+  <div class="col-md-12 col-lg-4 sec3">
+    <img class="img-responsive" src="skill2.jpg" width="450" height="400">
+  </div>
+  <div class="col-md-12 col-lg-4 sec3">
+    <br> <br> <br>
+    <h1 class="quotehead">Share Skill To Gain Skill</h1>
+    <p class="quote">
+      Teach your skill to your mutual and get a skill in return.
+    </p>
+    <br> <br>
+    <h1 class="quotehead">Meet Like-Minded People</h1>
+    <p class="quote">
+      No teacher can teach you better than the one who understands your mind.
+    </p>
+  
+  </div>
+  
+</div>
+
+<div class="accounts">
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-3 acc_start">
+      <h3> <i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills </h3>
+      &nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 030-53993864 <br>
+      &nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 033-32747983 <br>
+      &nbsp &nbsp  <i class="fas fa-envelope"></i> &nbsp SkillsForSkills@gmail.com <br>
+     
+
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 info">
+      <h5> Follow Us on </h5>
+      <i class="fab fa-facebook-square" style="font-size: 24px;"></i> &nbsp
+      <i class="fab fa-twitter-square" style="font-size: 24px; "></i> &nbsp
+      <i class="fab fa-instagram" style="font-size: 24px;"></i>  &nbsp
+      <i class="fab fa-linkedin" style="font-size: 24px;"></i>  &nbsp
+    
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 info">
+    <h5> Customer Care</h5> 
+      <a href="contact.html"> Contact Us</a> <br>
+      <a href="#"> Terms and Conditions</a>
+    </div>
+  </div>
+  
+</div>
+
+<div class="footer">
+@ Copyright MUET CSE 17CS22, 17CS23, 17CS24
+</div>
+
+
+
+</body>
+</html>
+

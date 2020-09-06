@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+		integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+		crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+		integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+		crossorigin="anonymous"></script>
+
+    <style>
+         * {
+		box-sizing: border-box;
+		font-family: -apple-system, BlinkMacSystemFont, "segoe ui", roboto, oxygen, ubuntu, cantarell, "fira sans", "droid sans", "helvetica neue", Arial, sans-serif;
+	}
+  @import url(https://fonts.googleapis.com/css?family=Exo+2:200i);
+
+       .navbar{
+	          padding: 5px 8px !important;
+            }
+        .navbar-brand{
+            color:   rgb(212, 212, 216) !important;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+        .nav-link {
+                font-size: 18px;
+                font-weight: 600;
+                color:ghostwhite !important;
+                margin: 5px;
+                padding: 5px !important;
+            }
+            .nav-link:hover{
+                color: rgb(212, 212, 216) !important;
+                transition: .5s;
+                text-decoration: underline;
+            }
+            #body{
+                padding: 2% 3%;
+                background-image: url("contact.jpg");
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .container{
+                margin: 2% auto;     
+                width: 40%;
+                padding: 20px;
+                background-color: rgb(240, 240, 240);
+                box-shadow: 1px 1px 10px azure;
+         	}
+  h2 {
+		text-align: center;
+		color: #34495E;
+	}
+
+	
+
+	.btn {
+		width: 96% !important;
+		background-color: #34495E;
+		font-size: 18px;
+		color: azure;
+	}
+
+	.btn:hover {
+		background-color: #2868c7 !important;
+    }
+    
+    .connect{
+        margin: 4% auto;
+        text-align: center;
+        background-color: rgb(238, 238, 238);
+        padding: 2%;
+    }
+    .accounts{
+              margin-top: 150px;
+              background-color: #252f3a;
+              color: rgb(197, 197, 197);
+              padding: 30px;
+            }
+            .info{
+               margin-left: 100px;
+            } 
+            .info h5{
+              text-decoration: underline;
+            }
+            .info a{
+              color: rgb(143, 140, 140);
+            }
+            .footer{
+              background-color: rgb(200, 196, 212);
+              color: rgb(60, 62, 71);
+              padding: 20px;
+              text-align: center;
+     
+            }
+
+            @media only screen and (max-width: 1200px) {
+            .info{
+              margin-left: 0px;
+              margin-top: 8%;
+            }
+          }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: #34495E !important;">
+        <a class="navbar-brand" href="#"><i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="connection.php">Connections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="chat1.php">Chat</a>
+          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+            </ul>
+            <span class="navbar-text">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="profile.php"><i class="fas fa-user-circle"></i> Profile </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="logout.php"><i class="fas fa-sign-out-alt"></i>  LogOut </a>
+            </li>
+            </ul>
+            </span>
+        </div>
+    </nav>
+    <div id="body">
+        <div class="container">
+            <form class="form-style" method="POST" action="">
+            <h2>Contact Us </h2> <br>
+                
+                    <div class="form-group">
+                        <label for="fname"> Name</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="number" class="form-control" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="msg">Message</label>
+                        <textarea class="form-control rounded-0" id="msg" name="msg" rows="3"></textarea>
+                    </div>
+                    
+                
+                    <!-- Copy -->
+                    <div class="custom-control custom-checkbox mb-4">
+                        <input type="checkbox" class="custom-control-input" id="defaultContactFormCopy">
+                        <label class="custom-control-label" for="defaultContactFormCopy">Send me a copy of this message</label>
+                    </div>
+                
+                    <!-- Send button -->
+                    <button class="btn btn-info btn-block" type="submit">Send</button>
+                </form>
+                </div>
+    </div>
+        
+            <div class="connect">
+                <h1> Connect With Us </h1>
+                 <br>
+                <p style="color: rgb(50, 56, 78);">Want to get in touch? Here's how you can reach Me.</p>
+                <br>
+                <i class="fab fa-facebook" style="color: mediumslateblue; font-size: 50px;">&nbsp; 
+                </i><i class="fab fa-whatsapp-square" style="color: rgb(115, 212, 71); font-size: 50px;"></i>&nbsp;
+                <i class="fab fa-instagram" style="color: rgb(221, 28, 102); font-size: 50px;"></i>&nbsp;
+                <i class="fab fa-linkedin" style="color: rgb(109, 125, 221); font-size: 50px;"></i>
+                
+            </div>
+
+            <div class="accounts">
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-3 acc_start">
+                    <h3> <i class="fas fa-chalkboard-teacher" style="font-size: 24px;"></i> SkillsForSkills </h3>
+                    &nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 030-53993864 <br>
+                    &nbsp &nbsp <i class="fas fa-phone-square"></i> &nbsp 033-32747983 <br>
+                    &nbsp &nbsp  <i class="fas fa-envelope"></i> &nbsp SkillsForSkills@gmail.com <br>
+                   
+              
+                  </div>
+              
+                  <div class="col-xs-12 col-sm-12 col-md-3 info">
+                    <h5> Follow Us on </h5>
+                    <i class="fab fa-facebook-square" style="font-size: 24px;"></i> &nbsp
+                    <i class="fab fa-twitter-square" style="font-size: 24px; "></i> &nbsp
+                    <i class="fab fa-instagram" style="font-size: 24px;"></i>  &nbsp
+                    <i class="fab fa-linkedin" style="font-size: 24px;"></i>  &nbsp
+                  
+                  </div>
+              
+                  <div class="col-xs-12 col-sm-12 col-md-3 info">
+                  <h5> Customer Care</h5> 
+                    <a href="contact.html"> Contact Us</a> <br>
+                    <a href="#"> Terms and Conditions</a>
+                  </div>
+                </div>
+                
+              </div>
+              
+              <div class="footer">
+              @ Copyright MUET CSE 17CS22, 17CS23, 17CS24
+              </div>
+              
+       
+</body>
+</html>
